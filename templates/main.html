@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joe's Webpage</title>
+    <meta charset="utf-8">
+    <!----------current screen-----------device width--------100% scale (no zoom) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Getting 'look' of bootstrap from css file-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!--javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href='/static/style.css' />
+</head>
+<body>
+                    <!-- -inverse gives different color scheme-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <!--LOGO-->
+            <div class="navbar-header">
+                <!--Creating automatic toggle button that comes up when screen is small-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#JoesNavBar">
+                    <span class="icon-bar"></span><!--Each line of the toggle button-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!--     # means no href link-->
+                <a href="#" class="navbar-brand" ><span class="glyphicon glyphicon-home"></span> HOME</a>
+            </div>
+
+
+            <!--MENU ITEMS-->
+                              <!--making it able to be collapsed and assigning it an id for targeting-->
+            <div class="collapse navbar-collapse" id="JoesNavBar">
+                <!--unordered list-->
+                <ul class="nav navbar-nav">
+                    <!--List items-->
+                    <!--active means visual indicator for that tab-->
+
+                    <!---------Left Side------->
+
+                    <!--Lights tab-->
+                    <li> <a href="/lights"><span class="glyphicon glyphicon-sunglasses"></span> Lights</a></li>
+                    <!--VLC tab-->
+                    <li> <a href="/vlc"><span class="glyphicon glyphicon-film"></span> VLC</a></li>
+                    <!--DROPDOWN MENU for Settings tab-->
+                    <li><a href="/doorlock"><span class="glyphicon glyphicon-lock"></span> Door Locks</a></li>
+                    </li>
+                </ul>
+
+                <!--Right Aligned side--------->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> LOGOUT</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!--Need a container class for most code. "container" = fixed width. -fluid denotes full width of screen-->
+    <div class = "container-fluid">
+        <h1>Home</h1>
+        <div class="row"><!--xs sm md lg xl are size variables-->
+            <div class="col-md-12" style="background-color: #FF9999">Left </div>
+            <div class="col-md-12" style="background-color: #99CCFF">Middle </div>
+            <div class="col-md-12" style="background-color: #00CC99">Right </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
