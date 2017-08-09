@@ -1,0 +1,41 @@
+{% extends "base_html/page_base.html"%}
+{% block page %}
+
+
+    <!--Need a container class for most code. "container" = fixed width. -fluid denotes full width of screen-->
+    <div class = "container-fluid">
+        <h1>LED Strip Colors</h1>
+        <div class="row" style="font-size:20px">  <!--xs sm md lg xl are size variables-->
+            <div class="col-sm-4" style="background-color: #FF0000">Red    </div>
+            <div class="col-sm-4" style="background-color: #FF9900">Orange </div>
+            <div class="col-sm-4" style="background-color: #FFFF00">Yellow </div>
+        </div>
+
+        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
+            <div class="col-sm-4" style="background-color: #99FF33">Light Green </div>
+            <div class="col-sm-4" style="background-color: #009933">Dark Green </div>
+            <div class="col-sm-4" style="background-color: #00FFFF">Light Blue </div>
+        </div>
+
+        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
+            <div class="col-sm-4" style="background-color: #0000FF">Dark Blue </div>
+            <div class="col-sm-4" style="background-color: #CC33FF">Purple </div>
+            <div class="col-sm-4" style="background-color: #FF99FF">Pink </div>
+        </div>
+
+        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
+            <div class="col-sm-4" style="background-color: #669999">Dim </div>
+            <div class="col-sm-4" style="background-color: #669999">Bright </div>
+            <div class="col-sm-4" style="background-color: #000000">WHITE </div>
+        </div>
+
+        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
+            <div class="col-sm-4" style="background-color: #669999">Cycle </div>
+            <div class="col-sm-4" style="background-color: #669999">Random </div>
+            <div class="col-sm-4" style="background-color: #669999">OFF </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}

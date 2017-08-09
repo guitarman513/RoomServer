@@ -11,13 +11,13 @@ tab3 = 'Door Lock'
 
 @app.route('/')
 def index():
-    return render_template('main.html')
+    return render_template('html/main.html')
 
 #lights
-@app.route('/Lights/')
-@app.route('/lights/')
+@app.route('/VLC/')
+@app.route('/vlc/')
 def firstTab():
-    return render_template('lights.html')
+    return render_template('html/VLC.html')
 
 #Door Lock
 @app.route('/VLC/')
@@ -36,7 +36,7 @@ def thirdTab():
 ############### 404 page
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('notFound.html'), 404
+    return render_template('html/notFound.html'), 404
 
 
 

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <!--Creating automatic toggle button that comes up when screen is small-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mecoNavBar">
+                <span class="glyphicon glyphicon-menu-down" style="color: #ffffff"></span><!--Each line of the toggle button-->
+            </button>
+            <!--     Putting Home icon in here because we dont want it to collapse with the others-->
+            <!--     # means no href link  / means home-->
+            <a href="/" class="navbar-brand" ><span style="color: white" class="glyphicon glyphicon-star" ></span><span style="color: white">&nbsp;&nbsp;Lights&nbsp;&nbsp;</span></a>
+        </div>
+
+        <!--MENU ITEMS-->
+                          <!--making it able to be collapsed and assigning it an id for targeting-->
+        <div class="collapse navbar-collapse" id="mecoNavBar">
+            <!--unordered list-->
+            <ul class="nav navbar-nav" >
+                <!--List items-->
+                <!--active means visual indicator for that tab-->
+
+                <!---------Left Side------->
+                <li> <a href="/VLC"><span style="color: white" class="glyphicon glyphicon-user"></span><span style="color: white">&nbsp;&nbsp;VLC&nbsp;&nbsp;</span></a></li>
+                <li><a href="/Pi-status"><span style="color: white" class="glyphicon glyphicon-flag"></span><span style="color: white">&nbsp;&nbsp;Server&nbsp;Settings&nbsp;&nbsp;</span></a></li>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
