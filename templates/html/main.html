@@ -2,40 +2,35 @@
 {% block page %}
 
 
-    <!--Need a container class for most code. "container" = fixed width. -fluid denotes full width of screen-->
-    <div class = "container-fluid">
-        <h1>LED Strip Colors</h1>
-        <div class="row" style="font-size:20px">  <!--xs sm md lg xl are size variables-->
-            <div class="col-sm-4" style="background-color: #FF0000">Red    </div>
-            <div class="col-sm-4" style="background-color: #FF9900">Orange </div>
-            <div class="col-sm-4" style="background-color: #FFFF00">Yellow </div>
-        </div>
-
-        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
-            <div class="col-sm-4" style="background-color: #99FF33">Light Green </div>
-            <div class="col-sm-4" style="background-color: #009933">Dark Green </div>
-            <div class="col-sm-4" style="background-color: #00FFFF">Light Blue </div>
-        </div>
-
-        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
-            <div class="col-sm-4" style="background-color: #0000FF">Dark Blue </div>
-            <div class="col-sm-4" style="background-color: #CC33FF">Purple </div>
-            <div class="col-sm-4" style="background-color: #FF99FF">Pink </div>
-        </div>
-
-        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
-            <div class="col-sm-4" style="background-color: #669999">Dim </div>
-            <div class="col-sm-4" style="background-color: #669999">Bright </div>
-            <div class="col-sm-4" style="background-color: #000000">WHITE </div>
-        </div>
-
-        <div class="row" style="font-size:20px"><!--xs sm md lg xl are size variables-->
-            <div class="col-sm-4" style="background-color: #669999">Cycle </div>
-            <div class="col-sm-4" style="background-color: #669999">Random </div>
-            <div class="col-sm-4" style="background-color: #669999">OFF </div>
-        </div>
-
+<!--Need a container class for most code. "container" = fixed width. -fluid denotes full width of screen-->
+<div class = "container-fluid">
+    <h1>LED Strip Colors</h1>
+    <div class="row" style="font-size:40px">  <!--xs sm md lg xl are size variables-->
+        <div class="col-xs-4" style="background-color: #FF0000"><a href="/LED/color/red" role="button">Red</a></div>
+        <div class="col-xs-4" style="background-color: #ED6D00"><a href="/LED/color/orange" role="button">Orange</a> </div>
+        <div class="col-xs-4" style="background-color: #FFFF00"><a href="/LED/color/yellow" role="button">Yellow</a></div>
     </div>
+    <div class="row" style="font-size:40px"><!--xs sm md lg xl are size variables-->
+        <div class="col-xs-4" style="background-color: #00FF00"> <a href="/LED/color/green" role="button">Green</a></div>
+        <div class="col-xs-4" style="background-color: #0000FF"><a href="/LED/color/blue" role="button">Blue</a> </div>
+        <div class="col-xs-4" style="background-color: #00FFFF"><a href="/LED/color/cyan" role="button">Cyan</a></div>
+    </div>
+    <div class="row" style="font-size:40px"><!--xs sm md lg xl are size variables-->
+        <div class="col-xs-4" style="background-color: #FFCCE5"><a href="/LED/color/pink" role="button">Pink</a></div>
+        <div class="col-xs-4" style="background-color: #FF00FF"><a href="/LED/color/magenta" role="button">Magenta</a></div>
+        <div class="col-xs-4" style="background-color: #002E5A"><a href="/LED/color/indigo" role="button">Indigo</a></div>
+    </div>
+    <div class="row" style="font-size:40px"><!--xs sm md lg xl are size variables-->
+        <div class="col-xs-4" style="background-color: #E0E0E0"><a href="/LED/color/white" role="button">White</a></div>
+        <div class="col-xs-4" style="background-color: #C0C0C0"><a href="/LED/color/rainbow" role="button">Rainbow</a></div>
+        <div class="col-xs-4" style="background-color: #000000"><a href="/LED/color/off" role="button">OFF</a></div>
+    </div>
+</div>
+
+
+
+
+
 
 
 {% endblock %}
